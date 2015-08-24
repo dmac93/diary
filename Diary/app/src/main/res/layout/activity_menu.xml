@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dominik.diary.MenuActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:id="@+id/titleMenu"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create"
+        android:id="@+id/CreateNewBut"
+        android:layout_below="@+id/titleMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:onClick="onNewNoteClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viewPrev"
+        android:id="@+id/ViePreviousBut"
+        android:layout_below="@+id/CreateNewBut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:onClick="onPreviousNotesClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manageNotes"
+        android:id="@+id/ManageItemsBut"
+        android:layout_below="@+id/ViePreviousBut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:onClick="onManageNotesClick"/>
+
+</RelativeLayout>
